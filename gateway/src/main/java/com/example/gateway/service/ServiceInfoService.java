@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public interface ServiceInfoService {
     ServiceInfo find(String serviceName);
+    ServiceInfo find(int serviceID);
 
     ServiceInfo find(String serviceName, String serviceDesc);
 

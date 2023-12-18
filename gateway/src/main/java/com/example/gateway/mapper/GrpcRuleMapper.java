@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface GrpcRuleMapper extends JpaRepository<GrpcRule, Integer> {
     GrpcRule findGrpcRuleByServiceId(Integer serviceId);
+    GrpcRule findGrpcByPort(int port);
 }

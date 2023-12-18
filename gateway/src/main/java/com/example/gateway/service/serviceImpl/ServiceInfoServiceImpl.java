@@ -30,6 +30,11 @@ public class ServiceInfoServiceImpl implements ServiceInfoService {
     }
 
     @Override
+    public ServiceInfo find(int serviceID) {
+        return serviceInfoMapper.findById(serviceID);
+    }
+
+    @Override
     public ServiceInfo find(String serviceName, String serviceDesc) {
         return serviceInfoMapper.findByServiceNameOrServiceDesc(serviceName, serviceDesc);
     }
